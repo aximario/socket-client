@@ -1,0 +1,28 @@
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.type1 {
+  width: 10rem;
+  height: 3rem;
+  background-color: royalblue;
+  border-radius: .5rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.type2 {
+  width: 10rem;
+  height: 3rem;
+  background-color: transparent;
+  border-radius: 1.5rem;
+  border: 1px solid gold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
