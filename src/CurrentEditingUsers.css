@@ -1,0 +1,43 @@
+.users {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: .5rem;
+  box-sizing: border-box;
+  align-items: center;
+  display: flex;
+  background-color: white;
+  width: 100vw;
+  overflow-x: scroll;
+  border-bottom: 1px solid silver;
+}
+
+.user {
+  width: 2.4rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: .5rem;
+}
+
+.user div {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  background-color: salmon;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: .5rem;
+}
+
+.user p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 2.4rem;
+  margin: 0;
+  line-height: 1.2rem;
+}

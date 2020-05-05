@@ -1,0 +1,13 @@
+.notice {
+  padding: .5rem;
+  background-color: silver;
+  border-radius: .2rem;
+  max-width: 10rem;
+  position: fixed;
+  top: 1rem;
+  transition: right 200ms ease-in-out ;
+}
+
+.notice p {
+  margin: 0;
+}
