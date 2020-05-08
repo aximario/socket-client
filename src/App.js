@@ -54,7 +54,7 @@ function App() {
   }
 
   useEffect(() => {
-    ctx.current.socket = io('http://localhost:3000')
+    ctx.current.socket = io('http://playground.axi.name/socket-demo')
     ctx.current.socket.on('save', data => {
       const { btnStyle, btnText, theme, user } = data
       setBtnStyle(btnStyle)
