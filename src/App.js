@@ -26,6 +26,7 @@ import message from './message'
 
 const btnClassNames = ['type1', 'type2']
 const backgroundClassNames = ['background1', 'background2']
+const avatarBackgrounds = ['aquamarine', 'blueviolet', 'cadetblue', 'darkslategray', 'firebrick', 'goldenrod', 'hotpink', 'indigo', 'khaki', 'lightsalmon']
 
 function App() {
   const [theme, setTheme] = useState('0')
@@ -176,10 +177,18 @@ function App() {
         closable={false}
         visible={currentEditingUsersPanelVisibility}
       >
-        {currentEditingUsers.map(v => (
+        {currentEditingUsers.map((v, i) => (
           <Row key={v.id}>
             <Col>
-              <Avatar size="large">{v.name}</Avatar>
+              <Avatar
+                size="large"
+                style={{
+                  backgroundColor: avatarBackgrounds[i % avatarBackgrounds.length],
+                  marginBottom: '.6rem'
+                }}
+              >
+                {v.name}
+              </Avatar>
             </Col>
           </Row>
         ))}
