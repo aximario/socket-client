@@ -1,8 +1,34 @@
-.row {
+.panel {
+  min-height: 100vh;
+}
+
+.background1 {
+  background-color: white;
+  color: black;
+}
+
+.background1 .users {
+  color: white;
+  background-color: black;
+}
+
+.background2 {
+  background-color: black;
+  color: white;
+}
+
+.background2 .users {
+  color: black;
+  background-color: white;
+}
+
+.preview {
   display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1rem;
 }
 
 .type1 {
@@ -14,6 +40,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .type2 {
@@ -25,4 +54,33 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.current-users-switch {
+  position: fixed !important;
+  left: 1rem;
+  top: 1rem;
+}
+
+.edit-panel-switch {
+  position: fixed !important;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+.config-drawer .ant-drawer-body {
+  position: relative;
+}
+
+.config-drawer .ant-tabs-tabpane {
+  padding: 0 10px;
+}
+
+.save-button {
+  position: absolute !important;
+  right: 24px;
+  top: 31px;
 }

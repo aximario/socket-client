@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
-import './name.css'
+import './Name.css'
 
 export default function Name ({ onUserSetName }) {
   const [name, setName] = useState('')
